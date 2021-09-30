@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page layout="1column"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Snippet Controller Example</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="snippet.controller.example"
+                   template="Snippet_Controller::controller_list.phtml">
+                <arguments>
+                    <argument name="controllers" xsi:type="array">
+                        <item name="json" xsi:type="string">snippet/index/json</item>
+                        <item name="raw" xsi:type="string">snippet/index/raw</item>
+                        <item name="page" xsi:type="string">snippet/index/index</item>
+                        <item name="redirect" xsi:type="string">snippet/index/redirect</item>
+                        <item name="forward" xsi:type="string">snippet/index/forward</item>
+                        <item name="layout" xsi:type="string">snippet/index/layout</item>
+                    </argument>
+                    <argument name="snippet_message" xsi:type="string">Hi there!</argument>
+                    <argument name="background_color" xsi:type="string">lightgreen</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

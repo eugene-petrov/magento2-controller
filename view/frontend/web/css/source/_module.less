@@ -1,0 +1,33 @@
+// Vars
+
+
+//
+//  Common
+//  _____________________________________________
+& when (@media-common = true) {
+    .snippet-content {
+        background-color: #f3e9d5;
+        border: #000000 2px ridge;
+        border-radius: 30px;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}

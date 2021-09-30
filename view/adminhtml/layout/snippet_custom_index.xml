@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="snippet.admin.controller.example"
+                   template="Snippet_Controller::snippet_template.phtml">
+                <arguments>
+                    <argument name="snippet_message" xsi:type="string">Hi there from admin panel!</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

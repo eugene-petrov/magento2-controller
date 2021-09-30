@@ -1,0 +1,27 @@
+<?php
+/**
+ * @var Magento\Framework\View\Element\Template $block
+ * @var Magento\Framework\Escaper $escaper
+ */
+$controllers = $block->getControllers();
+if (!is_array($controllers)) {
+    return;
+}
+?>
+
+<div>
+    <ul>
+        <?php foreach ($controllers as $name => $url):?>
+        <li>
+            <a href="<?= $escaper->escapeUrl($block->getUrl($url)) ?>" target="_blank">
+                <?= $escaper->escapeHtml($name) ?>
+            </a>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+    <div class="snippet-content">
+        <h2>
+            <?= $escaper->escapeHtml(__('Custom snippet block. %1', $block->getSnippet_message())) ?>
+        </h2>
+    </div>
+</div>

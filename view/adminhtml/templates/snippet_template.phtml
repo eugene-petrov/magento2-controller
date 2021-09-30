@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var Magento\Framework\View\Element\Template $block
+ * @var Magento\Framework\Escaper $escaper
+ */
+?>
+
+<div class="snippet-admin-content">
+    <h2>
+        <?= $escaper->escapeHtml(__('Custom snippet block. %1', $block->getSnippetMessage())) ?>
+    </h2>
+</div>
