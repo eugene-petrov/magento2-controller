@@ -1,3 +1,5 @@
+[![ExtDN M2 Coding Standard](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml/badge.svg?branch=main&event=pull_request)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml)
+
 ***Snippet_Controller***
 
 Task: you need to create a frontend or admin controller.

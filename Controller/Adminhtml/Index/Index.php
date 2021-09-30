@@ -21,6 +21,3 @@ class Index extends Action
         return $resultPage;
     }
 }
-
-
-
