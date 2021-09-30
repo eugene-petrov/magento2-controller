@@ -18,5 +18,9 @@ class Index extends Action
         $resultPage->setActiveMenu('Snippet_Controller::snippet_backend_controller');
         $resultPage->getConfig()->getTitle()->prepend((__('Title From Controller')));
 
-        return $resultPage;}
+        return $resultPage;
+    }
 }
+
+
+
