@@ -1,6 +1,6 @@
-[![ExtDN M2 Coding Standard](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml/badge.svg?branch=main&event=pull_request)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml)
-[![ExtDN M2 Mess Detector](https://github.com/eugene-petrov/magento2-controller/actions/workflows/mess-detector.yml/badge.svg?branch=main&event=pull_request)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/mess-detector.yml)
-[![ExtDN M2 PHPStan](https://github.com/eugene-petrov/magento2-controller/actions/workflows/phpstan.yml/badge.svg?branch=main&event=pull_request)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/phpstan.yml)
+[![ExtDN M2 Coding Standard](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml/badge.svg?branch=main&event=push)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/coding-standard.yml)
+[![ExtDN M2 Mess Detector](https://github.com/eugene-petrov/magento2-controller/actions/workflows/mess-detector.yml/badge.svg?branch=main&event=push)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/mess-detector.yml)
+[![ExtDN M2 PHPStan](https://github.com/eugene-petrov/magento2-controller/actions/workflows/phpstan.yml/badge.svg?branch=main&event=push)](https://github.com/eugene-petrov/magento2-controller/actions/workflows/phpstan.yml)
 
 ***Snippet_Controller***
 
