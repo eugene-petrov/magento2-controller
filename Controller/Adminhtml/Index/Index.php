@@ -19,4 +19,5 @@ class Index extends Action
         $resultPage->getConfig()->getTitle()->prepend((__('Title From Controller')));
 
         return $resultPage;
-    }}
+    }
+}
