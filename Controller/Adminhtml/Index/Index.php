@@ -6,13 +6,14 @@ namespace Snippet\Controller\Controller\Adminhtml\Index;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;
+use Magento\Framework\Controller\ResultInterface;
 
 class Index extends Action
 {
     /**
-     * @inheridoc
+     * @return ResultInterface
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
         $resultPage->setActiveMenu('Snippet_Controller::snippet_backend_controller');

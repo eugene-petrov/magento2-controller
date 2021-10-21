@@ -6,6 +6,7 @@ namespace Snippet\Controller\Controller\Index;
 
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\Controller\Result\RawFactory;
+use Magento\Framework\Controller\ResultInterface;
 
 class Raw implements ActionInterface
 {
@@ -23,9 +24,9 @@ class Raw implements ActionInterface
     }
 
     /**
-     * @inheridoc
+     * @return ResultInterface
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         $result = $this->rawFactory->create();
         $result->setContents('Go to the controller and see how this content is rendered');

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Snippet\Controller\Controller\Index;
 
 use Magento\Framework\App\ActionInterface;
+use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\LayoutFactory;
 
 class Layout implements ActionInterface
@@ -23,9 +24,9 @@ class Layout implements ActionInterface
     }
 
     /**
-     * @inheridoc
+     * @return ResultInterface
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         return $this->layoutFactory->create();
     }

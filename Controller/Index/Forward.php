@@ -6,6 +6,7 @@ namespace Snippet\Controller\Controller\Index;
 
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\Controller\Result\ForwardFactory;
+use Magento\Framework\Controller\ResultInterface;
 
 class Forward implements ActionInterface
 {
@@ -23,9 +24,9 @@ class Forward implements ActionInterface
     }
 
     /**
-     * @inheridoc
+     * @return ResultInterface
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         $result = $this->forwardFactory->create();
         return $result->setModule('cms')
