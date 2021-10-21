@@ -6,6 +6,7 @@ namespace Snippet\Controller\Controller\Index;
 
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\Controller\Result\JsonFactory;
+use Magento\Framework\Controller\ResultInterface;
 use Snippet\Controller\Model\ArgumentsContainer;
 
 class Json implements ActionInterface
@@ -31,9 +32,9 @@ class Json implements ActionInterface
     }
 
     /**
-     * @inheridoc
+     * @return ResultInterface
      */
-    public function execute()
+    public function execute(): ResultInterface
     {
         $result = $this->jsonFactory->create();
         $result->setData([
